@@ -4,7 +4,7 @@ with open("README.md", "r") as f:
     long_description = f.read()
 
 setup(
-    name="taskit",
+    name="task-it",
     author="Riley Geddes",
     version="1.0.0",
     description="A CLI task management system",
@@ -19,7 +19,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "taskit=app:start_app",
+            "task-it=app:start_app",
         ],
     },
 )
