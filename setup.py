@@ -6,7 +6,7 @@ with open("README.md", "r") as f:
 setup(
     name="taskwizard",
     author="Riley Geddes",
-    version="1.0.0",
+    version="1.0.1",
     description="A CLI task management system",
     url="https://github.com/srgeddes/taskwizard.git",
     install_requires=["click"],
