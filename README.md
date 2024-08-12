@@ -1,6 +1,6 @@
-# TaskIt
+# TaskWizard
 
-TaskIt is a command-line interface (CLI) task management application that allows users to create, manage, and track their tasks efficiently.
+TaskWizard is a command-line interface (CLI) task management application that allows users to create, manage, and track their tasks efficiently.
 
 ## Features
 
@@ -13,16 +13,16 @@ TaskIt is a command-line interface (CLI) task management application that allows
 
 ## Installation
 
-To install TaskIt, follow these steps:
+To install TaskWizard, follow these steps:
 
 1. Ensure you have Python 3.6 or higher installed on your system.
-2. pip install task-it
+2. pip install taskwizard
 3. If you cloned the repository already : pip install .
-4. run 'taskit'
+4. run 'taskwizard'
 
 ## Usage
 
-After installation, you can start TaskIt by running:
+After installation, you can start TaskWizard by running:
 
 ### Available Commands
 
@@ -44,6 +44,12 @@ To add a new task, use the `add` command and follow the prompts:
 3. Select a priority (LOW, MEDIUM, HIGH)
 4. Enter a description (optional)
 
+### Get a Task
+
+To see all the details of an existing task, use the `get` command and follow the prompts:
+
+1. Enter an existing name for the task (They are case sensitive)
+
 ### Editing a Task
 
 To edit a task, use the `edit` command:
@@ -58,4 +64,4 @@ To delete a task, use the `delete` command and enter the name of the task you wi
 ## Note
 
 - Task names are case-sensitive
-- The application uses a local database file (`taskit.db`) to store tasks
+- The application uses a local database file (`taskwizard.db`) to store tasks
