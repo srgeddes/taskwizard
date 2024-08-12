@@ -1,14 +1,14 @@
 import click
 from datetime import datetime
-from .. import taskdb
+from .. import taskwizard_db
 from ..text_helpers import *
 from . import cmd_actions
 from ..models import Task, Priority
 
 
-class TaskItCLI:
+class TaskWizard:
     def __init__(self):
-        self.task_db = taskdb.TaskDatabase("taskit.db")
+        self.task_db = taskwizard_db.TaskWizardDatabase("taskwizard.db")
         self.commands = {
             "exit": self.exit_cmd,
             "help": self.help_cmd,
@@ -70,7 +70,7 @@ class TaskItCLI:
         click.echo(green_text(f"Task '{old_name}' found!"))
         click.echo(str(cmd_actions.get_action(self.task_db, old_name)))
         click.echo(blue_text("Make the edits below"))
-        new_name = self._get_unique_name()
+        new_name = click.prompt("Name")
         new_due_date = self._get_valid_due_date()
         new_priority = self._get_priority()
         new_description = self._get_description()

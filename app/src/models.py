@@ -1,7 +1,6 @@
 import uuid
 from datetime import datetime
 from enum import Enum
-from ..src import text_helpers
 
 
 class Priority(Enum):

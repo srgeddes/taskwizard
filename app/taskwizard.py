@@ -1,8 +1,8 @@
-from app.src.cmd.TaskItCLI import TaskItCLI
+from app.src.cmd.TaskWizardCLI import TaskWizard
 
 
 def start_app():
-    cli = TaskItCLI()
+    cli = TaskWizard()
     cli.run()
 
 

@@ -1,9 +1,9 @@
 import click, uuid, sqlite3
 from .models import Task, Priority
-from ..src.text_helpers import red_text, green_text
+from .text_helpers import red_text, green_text
 
 
-class TaskDatabase:
+class TaskWizardDatabase:
     def __init__(self, db_name):
         self.db_name = db_name
         self.con = sqlite3.connect(self.db_name)

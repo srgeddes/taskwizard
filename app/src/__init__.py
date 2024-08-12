@@ -1,7 +1,7 @@
 import click, datetime
-from .cmd.TaskItCLI import TaskItCLI
+from .cmd.TaskWizardCLI import TaskWizard
 from .cmd import cmd_actions
-from .taskdb import TaskDatabase
+from .taskwizard_db import TaskWizardDatabase
 from .models import Task, Priority
 from .text_helpers import (
     format_date_12,
